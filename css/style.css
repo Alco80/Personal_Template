@@ -109,3 +109,30 @@ body {
 .image-grid img{
   padding-bottom: 1rem;
 }
+.info, .info2{
+  padding: 2.4rem;
+}
+
+.info{
+  background-color: rgb(200, 200, 200);
+}
+
+.info h3 p, .info2 h3 p{
+  color: rgb(43, 42, 42);
+}
+
+
+.info h3, .info2 h3{
+  font-size: 1.4rem;
+}
+
+.footer{
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  color: #e8eaf5;
+  padding: 1.4rem;
+}
+
+small{
+  font-weight: 100;
+}
