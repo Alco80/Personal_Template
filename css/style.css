@@ -16,7 +16,8 @@ a {
 }
 
 img {
-  max-width: 100%;
+  aspect-ratio: 1/1;
+  width: 100%;
   height: auto;
   vertical-align: middle;
   font-style: italic;
@@ -84,7 +85,7 @@ body {
   background-color: rgb(3, 186, 27);
   color: rgb(35, 36, 36);
   font-weight: 500;
-  padding: 0.8rem 1.8rem ;
+  padding: 0.8rem 1.8rem;
   border-radius: 10px;
 }
 
@@ -99,40 +100,62 @@ body {
 }
 
 .sub-container {
+  display: flex;
+  justify-content: center;
   padding: 2.4rem;
+  border: 2px solid red;
 }
 
-.image-grid{
-  display: block;
+.image-grid {
+  flex-direction: column;
 }
 
-.image-grid img{
+.image-grid img {
   padding-bottom: 1rem;
 }
-.info, .info2{
+.info,
+.info2 {
   padding: 2.4rem;
 }
 
-.info{
+.info {
   background-color: rgb(200, 200, 200);
 }
 
-.info h3 p, .info2 h3 p{
+.info h3 p,
+.info2 h3 p {
   color: rgb(43, 42, 42);
 }
 
-
-.info h3, .info2 h3{
+.info h3,
+.info2 h3 {
   font-size: 1.4rem;
 }
 
-.footer{
+.footer {
   text-align: center;
   background-color: rgb(40, 40, 40);
   color: #e8eaf5;
   padding: 1.4rem;
 }
 
-small{
+small {
   font-weight: 100;
+}
+
+/**************** MEDIA QUERIES ***************/
+
+@media screen and (min-width: 650px) {
+  .sub-container{
+   align-content: center;
+  }
+  
+  .image-grid img {
+    max-width: 30%;
+  }
+
+  .info2{
+    display: flex;
+    gap: 2rem;
+  }
 }
