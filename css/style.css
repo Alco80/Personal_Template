@@ -62,3 +62,23 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
 }
+
+/* Button */
+
+.btn-container{
+  padding-top: 1em;
+}
+
+.btn-container a{
+  background-color: rgb(3, 186, 27);
+  color: rgb(35, 36, 36);
+  font-weight: 500;
+  padding: .8rem;
+  border-radius: 10px;
+}
+
+.btn-container a:hover{
+ background-color: rgb(244, 9, 220); /* Change to any colour you like, these colours are just for examples. */
+ color: rgb(232, 234, 245);
+ transition: 500ms ease-in-out;
+}
