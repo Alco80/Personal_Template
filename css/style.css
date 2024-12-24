@@ -35,4 +35,30 @@ body {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
+  padding: 2.4rem;
+}
+
+.hero-text {
+  padding-bottom: 3em;
+}
+
+.hero-text h2, .hero-text p{
+    color: rgb(230, 230, 230);
+}
+
+.hero-text h2{
+  margin-top: 0;
+  font-size: 2rem;
+  /* letter-spacing: .075em; */
+}
+
+.separator{
+  margin-left: 0;
+  border: 1px solid rgb(224, 224, 224);
+  width: 15%;
+}
+
+.hero-text p{
+  font-size: 1.4rem;
+  font-weight: 100;
 }
