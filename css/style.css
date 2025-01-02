@@ -60,8 +60,12 @@ body {
 
 .hero-text h2 {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
   /* letter-spacing: .075em; */
+}
+
+h3{
+  font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
 }
 
 .separator {
@@ -71,7 +75,7 @@ body {
 }
 
 .hero-text p {
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 1vw + 0.75rem, 1.25rem);
   font-weight: 100;
 }
 
@@ -100,14 +104,13 @@ body {
 }
 
 .sub-container {
-  display: flex;
-  justify-content: center;
   padding: 2.4rem;
-  border: 2px solid red;
 }
 
-.image-grid {
-  flex-direction: column;
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
 }
 
 .image-grid img {
@@ -146,16 +149,5 @@ small {
 /**************** MEDIA QUERIES ***************/
 
 @media screen and (min-width: 650px) {
-  .sub-container{
-   align-content: center;
-  }
-  
-  .image-grid img {
-    max-width: 30%;
-  }
 
-  .info2{
-    display: flex;
-    gap: 2rem;
-  }
 }
